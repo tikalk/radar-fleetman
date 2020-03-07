@@ -16,6 +16,7 @@ public class LocationData {
         return imei;
     }
 
+
     public String getSentTime() {
         return sentTime;
     }
