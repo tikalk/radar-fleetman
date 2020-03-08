@@ -20,7 +20,7 @@ public class SpeedResource {
     @POST
     @Consumes(APPLICATION_JSON)
     @Produces(APPLICATION_JSON)
-    public SpeedData getSpeedData(LocationData locationData){
-        return speedService.getSpeedData(locationData);
+    public SpeedData getSpeedData(LocationData[] locations){
+        return speedService.getSpeedData(locations);
     }
 }

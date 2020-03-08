@@ -16,7 +16,7 @@ public class SpeedResource {
     SpeedService speedService;
 
     @PostMapping
-    public SpeedData getSpeedData(@RequestBody LocationData locationData){
-        return speedService.getSpeedData(locationData);
+    public SpeedData getSpeedData(@RequestBody LocationData[] locations) {
+        return speedService.getSpeedData(locations);
     }
 }
